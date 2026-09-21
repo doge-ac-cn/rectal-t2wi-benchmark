@@ -1,0 +1,24 @@
+{
+  "RC_A_val": {
+    "n": 963,
+    "dice_mean": 0.6586,
+    "hd95_median": 13.152,
+    "hd95_mean": 25.509,
+    "hd95_p75": 35.046,
+    "assd_median": 3.043,
+    "frac_hd95_gt5mm": 0.6937,
+    "frac_hd95_gt10mm": 0.5493
+  },
+  "RC_B": {
+    "n": 82,
+    "dice_mean": 0.6762,
+    "hd95_median": 8.956,
+    "hd95_mean": 16.091,
+    "hd95_p75": 20.782,
+    "assd_median": 2.232,
+    "frac_hd95_gt5mm": 0.6707,
+    "frac_hd95_gt10mm": 0.4878
+  },
+  "_crosscheck_maxabsdice_vs_diceval": null,
+  "_n_errors": 5
+}

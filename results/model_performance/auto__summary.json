@@ -1,0 +1,37 @@
+{
+  "generated_by": "summary.py",
+  "auto_vs_manual": {
+    "dl_convnext_base": {
+      "auto": {
+        "tag": "convnext_base_d25roi_auto",
+        "val_auc": "0.7424±0.0308",
+        "ext_auc": "0.7905±0.0418"
+      },
+      "manual_ref": {
+        "source": "convnext_base d25_roi (手动掩膜)",
+        "val_auc": "0.8381±0.0174",
+        "ext_auc": "0.8583±0.0104"
+      },
+      "delta_ext_auc": -0.0679,
+      "verdict": "auto 掩膜显著劣于手动 — 检查 Dice 评估与预测质量"
+    },
+    "radiomics_LGB": {
+      "auto": {
+        "config": "none+LGB(300,31,0.1)",
+        "cv_auc": "0.7928±0.0239",
+        "test_auc": 0.7805,
+        "ext_auc": 0.8694,
+        "ext_acc": 0.7805,
+        "ext_sen": 0.7674,
+        "ext_spe": 0.7949
+      },
+      "manual_ref": {
+        "source": "手动掩膜 none+LGB(300,31,0.1)",
+        "cv_auc": 0.8472,
+        "test_auc": 0.8881,
+        "ext_auc": 0.8951
+      },
+      "delta_ext_auc": -0.0257
+    }
+  }
+}

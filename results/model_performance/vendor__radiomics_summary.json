@@ -1,0 +1,189 @@
+{
+  "note": " radiomics vendor/thickness holdout, protocol=nested-CV ensemble",
+  "results": {
+    "manual_ge2si": {
+      "arm": "ge2si",
+      "source": "GE MEDICAL SYSTEMS|None",
+      "target_n": 309,
+      "target_pos": 136,
+      "best_model": "nested-CV soft-vote ensemble",
+      "l1_C": "per-member",
+      "members": {
+        "LR": "LR C=0.01",
+        "SVM": "SVM-rbf C=1.0 gamma=0.001",
+        "RF": "RF n=500 depth=10",
+        "DT": "DT depth=5 msl=30",
+        "LGBM": "LGBM n=300 lr=0.1 leaves=31"
+      },
+      "n_selected": 419,
+      "cv_auc_mean": 0.8389,
+      "cv_auc_std": 0.0274,
+      "target_auc": 0.8526,
+      "target_ci95": [
+        0.8077,
+        0.8927
+      ]
+    },
+    "manual_si2ge": {
+      "arm": "si2ge",
+      "source": "SIEMENS|None",
+      "target_n": 659,
+      "target_pos": 270,
+      "best_model": "nested-CV soft-vote ensemble",
+      "l1_C": "per-member",
+      "members": {
+        "LR": "LR C=0.01",
+        "SVM": "SVM-rbf C=1.0 gamma=0.001",
+        "RF": "RF n=500 depth=None",
+        "DT": "DT depth=3 msl=10",
+        "LGBM": "LGBM n=300 lr=0.05 leaves=31"
+      },
+      "n_selected": 174,
+      "cv_auc_mean": 0.8629,
+      "cv_auc_std": 0.0242,
+      "target_auc": 0.8155,
+      "target_ci95": [
+        0.7812,
+        0.847
+      ]
+    },
+    "manual_gethk2thin": {
+      "arm": "gethk2thin",
+      "source": "GE|thick>3.2",
+      "target_n": 69,
+      "target_pos": 38,
+      "best_model": "nested-CV soft-vote ensemble",
+      "l1_C": "per-member",
+      "members": {
+        "LR": "LR C=0.01",
+        "SVM": "SVM-rbf C=1.0 gamma=0.001",
+        "RF": "RF n=500 depth=None",
+        "DT": "DT depth=3 msl=30",
+        "LGBM": "LGBM n=300 lr=0.1 leaves=15"
+      },
+      "n_selected": 155,
+      "cv_auc_mean": 0.8448,
+      "cv_auc_std": 0.0218,
+      "target_auc": 0.7122,
+      "target_ci95": [
+        0.5783,
+        0.8328
+      ]
+    },
+    "manual_gethin2thk": {
+      "arm": "gethin2thk",
+      "source": "GE|thin<=2.0",
+      "target_n": 581,
+      "target_pos": 228,
+      "best_model": "nested-CV soft-vote ensemble",
+      "l1_C": "per-member",
+      "members": {
+        "LR": "LR C=1.0",
+        "SVM": "SVM-rbf C=10.0 gamma=scale",
+        "RF": "RF n=500 depth=10",
+        "DT": "DT depth=3 msl=10",
+        "LGBM": "LGBM n=300 lr=0.05 leaves=31"
+      },
+      "n_selected": 66,
+      "cv_auc_mean": 0.6744,
+      "cv_auc_std": 0.0569,
+      "target_auc": 0.6983,
+      "target_ci95": [
+        0.6563,
+        0.7412
+      ]
+    },
+    "auto_ge2si": {
+      "arm": "ge2si",
+      "source": "GE MEDICAL SYSTEMS|None",
+      "target_n": 309,
+      "target_pos": 136,
+      "best_model": "nested-CV soft-vote ensemble",
+      "l1_C": "per-member",
+      "members": {
+        "LR": "LR C=10.0",
+        "SVM": "SVM-rbf C=1.0 gamma=0.01",
+        "RF": "RF n=500 depth=10",
+        "DT": "DT depth=3 msl=30",
+        "LGBM": "LGBM n=300 lr=0.05 leaves=31"
+      },
+      "n_selected": 320,
+      "cv_auc_mean": 0.7721,
+      "cv_auc_std": 0.051,
+      "target_auc": 0.787,
+      "target_ci95": [
+        0.7325,
+        0.8369
+      ]
+    },
+    "auto_si2ge": {
+      "arm": "si2ge",
+      "source": "SIEMENS|None",
+      "target_n": 659,
+      "target_pos": 270,
+      "best_model": "nested-CV soft-vote ensemble",
+      "l1_C": "per-member",
+      "members": {
+        "LR": "LR C=10.0",
+        "SVM": "SVM-rbf C=10.0 gamma=0.01",
+        "RF": "RF n=500 depth=10",
+        "DT": "DT depth=None msl=10",
+        "LGBM": "LGBM n=300 lr=0.1 leaves=31"
+      },
+      "n_selected": 214,
+      "cv_auc_mean": 0.7695,
+      "cv_auc_std": 0.0292,
+      "target_auc": 0.7579,
+      "target_ci95": [
+        0.7196,
+        0.7945
+      ]
+    },
+    "auto_gethk2thin": {
+      "arm": "gethk2thin",
+      "source": "GE|thick>3.2",
+      "target_n": 69,
+      "target_pos": 38,
+      "best_model": "nested-CV soft-vote ensemble",
+      "l1_C": "per-member",
+      "members": {
+        "LR": "LR C=10.0",
+        "SVM": "SVM-rbf C=10.0 gamma=0.01",
+        "RF": "RF n=500 depth=10",
+        "DT": "DT depth=3 msl=10",
+        "LGBM": "LGBM n=300 lr=0.1 leaves=15"
+      },
+      "n_selected": 74,
+      "cv_auc_mean": 0.7871,
+      "cv_auc_std": 0.0378,
+      "target_auc": 0.6791,
+      "target_ci95": [
+        0.5453,
+        0.8005
+      ]
+    },
+    "auto_gethin2thk": {
+      "arm": "gethin2thk",
+      "source": "GE|thin<=2.0",
+      "target_n": 581,
+      "target_pos": 228,
+      "best_model": "nested-CV soft-vote ensemble",
+      "l1_C": "per-member",
+      "members": {
+        "LR": "LR C=0.01",
+        "SVM": "SVM-rbf C=0.1 gamma=scale",
+        "RF": "RF n=500 depth=None",
+        "DT": "DT depth=3 msl=10",
+        "LGBM": "LGBM n=300 lr=0.05 leaves=15"
+      },
+      "n_selected": 69,
+      "cv_auc_mean": 0.5389,
+      "cv_auc_std": 0.1063,
+      "target_auc": 0.6358,
+      "target_ci95": [
+        0.5889,
+        0.6815
+      ]
+    }
+  }
+}

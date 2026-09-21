@@ -1,0 +1,86 @@
+{
+  "note": "Contour morphological perturbation (dilate/erode 1-3mm, signed-distance on the radiomics_auto resampling grid, identical extraction)",
+  "selfcheck": {
+    "manual_ext_auc": 0.8951,
+    "anchor_mask_source": 0.8951,
+    "match": true
+  },
+  "locked_model_auc_curves": {
+    "test": {
+      "orig": 0.8881,
+      "dil1": 0.8916,
+      "dil2": 0.7819,
+      "dil3": 0.5569,
+      "ero1": 0.839,
+      "ero2": 0.7416,
+      "ero3": 0.6858
+    },
+    "ext": {
+      "orig": 0.8951,
+      "dil1": 0.8533,
+      "dil2": 0.7352,
+      "dil3": 0.6386,
+      "ero1": 0.8962,
+      "ero2": 0.8593,
+      "ero3": 0.7967
+    }
+  },
+  "n_empty_masks_by_version": {
+    "dil1": 0,
+    "dil2": 0,
+    "dil3": 0,
+    "ero1": 0,
+    "ero2": 0,
+    "ero3": 0
+  },
+  "feature_stability": {
+    "median_rel_drift quartiles": [
+      0.2395,
+      0.3774,
+      0.5502
+    ],
+    "frac_stable_le_0.1": 0.0691,
+    "n_stable_feats": 91,
+    "n_feats": 1316
+  },
+  "robust_subset_rescue": {
+    "n_stable_feats": 91,
+    "subset_manual_ext": 0.6625,
+    "subset_manual_test": 0.6742,
+    "subset_auto_ext": 0.6142,
+    "subset_auto_test": 0.6171,
+    "subset_dil2_ext": 0.7645
+  },
+  "volume_check": {
+    "feature": "original_shape_MeshVolume",
+    "dil1": {
+      "median_ratio": 1.1733,
+      "frac_increase": 1.0
+    },
+    "dil2": {
+      "median_ratio": 1.6424,
+      "frac_increase": 1.0
+    },
+    "dil3": {
+      "median_ratio": 2.1107,
+      "frac_increase": 1.0
+    },
+    "ero1": {
+      "median_ratio": 0.8353,
+      "frac_increase": 0.0
+    },
+    "ero2": {
+      "median_ratio": 0.4859,
+      "frac_increase": 0.0
+    },
+    "ero3": {
+      "median_ratio": 0.203,
+      "frac_increase": 0.0
+    }
+  },
+  "baseline_reference": {
+    "manual_ext": 0.8951,
+    "auto_ext": 0.8694,
+    "published": 0.813
+  }
+}

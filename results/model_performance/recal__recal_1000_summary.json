@@ -1,0 +1,59 @@
+{
+  "note": "nested-OOF Platt recalibration re-anchored to auto1000 contours; DL arms evaluated on te subsets of gradable cases (193)",
+  "rad_man": {
+    "platt": {
+      "slope": 0.8784,
+      "intercept": 0.0002
+    },
+    "te": {
+      "before": 1.1766,
+      "after": 1.3393
+    },
+    "ts": {
+      "before": 1.2916,
+      "after": 1.4699
+    }
+  },
+  "rad_auto1000": {
+    "platt": {
+      "slope": 0.8684,
+      "intercept": -0.0153
+    },
+    "te": {
+      "before": 0.7656,
+      "after": 0.8816
+    },
+    "ts": {
+      "before": 0.981,
+      "after": 1.1297
+    }
+  },
+  "dl_man": {
+    "platt": {
+      "slope": 1.9301,
+      "intercept": -0.3621
+    },
+    "te": {
+      "before": 1.8029,
+      "after": 0.9342
+    },
+    "ts": {
+      "before": 1.0825,
+      "after": 0.5609
+    }
+  },
+  "dl_auto1000": {
+    "platt": {
+      "slope": 1.9736,
+      "intercept": -0.6826
+    },
+    "te": {
+      "before": 1.7104,
+      "after": 0.8667
+    },
+    "ts": {
+      "before": 1.1865,
+      "after": 0.6011
+    }
+  }
+}

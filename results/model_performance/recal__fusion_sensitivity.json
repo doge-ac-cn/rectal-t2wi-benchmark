@@ -1,0 +1,58 @@
+{
+  "manual": {
+    "n_complete_oof": 774,
+    "equal": {
+      "oof": 0.8468,
+      "test": 0.9402,
+      "ext": 0.8945
+    },
+    "oofauc_weighted": {
+      "oof": 0.8471,
+      "test": 0.9394,
+      "ext": 0.8939
+    },
+    "inverse_var_logit": {
+      "oof": 0.8502,
+      "test": 0.9299,
+      "ext": 0.8974
+    },
+    "single_best_radiomics": {
+      "oof": 0.8377,
+      "test": 0.8762,
+      "ext": 0.8915
+    },
+    "single_best_dl": {
+      "oof": 0.8054,
+      "test": 0.958,
+      "ext": 0.8706
+    }
+  },
+  "auto": {
+    "n_complete_oof": 769,
+    "equal": {
+      "oof": 0.767,
+      "test": 0.878,
+      "ext": 0.8175
+    },
+    "oofauc_weighted": {
+      "oof": 0.7683,
+      "test": 0.8709,
+      "ext": 0.8169
+    },
+    "inverse_var_logit": {
+      "oof": 0.771,
+      "test": 0.7695,
+      "ext": 0.7949
+    },
+    "single_best_radiomics": {
+      "oof": 0.7651,
+      "test": 0.7477,
+      "ext": 0.7892
+    },
+    "single_best_dl": {
+      "oof": 0.7082,
+      "test": 0.9585,
+      "ext": 0.8187
+    }
+  }
+}

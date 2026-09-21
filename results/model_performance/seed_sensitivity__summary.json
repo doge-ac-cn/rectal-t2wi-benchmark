@@ -1,0 +1,250 @@
+{
+  "note": "seed sensitivity, seeds 42/43/44, ResNet50 protocol",
+  "arms": [
+    {
+      "arm": "resnet50_d2_roi",
+      "label": "2D tumor-ROI (1 slice)",
+      "per_seed": [
+        {
+          "seed": 42,
+          "tag": "resnet50_d2_roi",
+          "val_auc": 0.8214,
+          "ext_auc": 0.8211,
+          "ext_ensemble": 0.8599
+        },
+        {
+          "seed": 43,
+          "tag": "resnet50_d2_roi",
+          "val_auc": 0.8209,
+          "ext_auc": 0.8326,
+          "ext_ensemble": 0.8712
+        },
+        {
+          "seed": 44,
+          "tag": "resnet50_d2_roi",
+          "val_auc": 0.8179,
+          "ext_auc": 0.8353,
+          "ext_ensemble": 0.8766
+        }
+      ],
+      "ext_mean_sd": [
+        0.8297,
+        0.0075
+      ],
+      "ens_mean_sd": [
+        0.8692,
+        0.0085
+      ]
+    },
+    {
+      "arm": "resnet50_d25_roi",
+      "label": "2.5D tumor-ROI (3 slices)",
+      "per_seed": [
+        {
+          "seed": 42,
+          "tag": "resnet50_d25_roi",
+          "val_auc": 0.8314,
+          "ext_auc": 0.8515,
+          "ext_ensemble": 0.8754
+        },
+        {
+          "seed": 43,
+          "tag": "resnet50_d25_roi",
+          "val_auc": 0.8358,
+          "ext_auc": 0.8314,
+          "ext_ensemble": 0.8724
+        },
+        {
+          "seed": 44,
+          "tag": "resnet50_d25_roi",
+          "val_auc": 0.8201,
+          "ext_auc": 0.8602,
+          "ext_ensemble": 0.898
+        }
+      ],
+      "ext_mean_sd": [
+        0.8477,
+        0.0148
+      ],
+      "ens_mean_sd": [
+        0.8819,
+        0.014
+      ]
+    },
+    {
+      "arm": "resnet50_d5_roi",
+      "label": "2.5D tumor-ROI (5 slices)",
+      "per_seed": [
+        {
+          "seed": 42,
+          "tag": "resnet50_d5_roi",
+          "val_auc": 0.8192,
+          "ext_auc": 0.8299,
+          "ext_ensemble": 0.8661
+        },
+        {
+          "seed": 43,
+          "tag": "resnet50_d5_roi",
+          "val_auc": 0.835,
+          "ext_auc": 0.8304,
+          "ext_ensemble": 0.8617
+        },
+        {
+          "seed": 44,
+          "tag": "resnet50_d5_roi",
+          "val_auc": 0.8246,
+          "ext_auc": 0.8227,
+          "ext_ensemble": 0.8503
+        }
+      ],
+      "ext_mean_sd": [
+        0.8277,
+        0.0043
+      ],
+      "ens_mean_sd": [
+        0.8594,
+        0.0082
+      ]
+    },
+    {
+      "arm": "resnet50_d7_roi",
+      "label": "2.5D tumor-ROI (7 slices)",
+      "per_seed": [
+        {
+          "seed": 42,
+          "tag": "resnet50_d7_roi",
+          "val_auc": 0.8223,
+          "ext_auc": 0.8097,
+          "ext_ensemble": 0.8312
+        },
+        {
+          "seed": 43,
+          "tag": "resnet50_d7_roi",
+          "val_auc": 0.8328,
+          "ext_auc": 0.8035,
+          "ext_ensemble": 0.8396
+        },
+        {
+          "seed": 44,
+          "tag": "resnet50_d7_roi",
+          "val_auc": 0.8265,
+          "ext_auc": 0.8275,
+          "ext_ensemble": 0.8652
+        }
+      ],
+      "ext_mean_sd": [
+        0.8136,
+        0.0125
+      ],
+      "ens_mean_sd": [
+        0.8453,
+        0.0177
+      ]
+    },
+    {
+      "arm": "resnet50_d25_rect",
+      "label": "2.5D bounding-box",
+      "per_seed": [
+        {
+          "seed": 42,
+          "tag": "resnet50_d25_rect",
+          "val_auc": 0.788,
+          "ext_auc": 0.7571,
+          "ext_ensemble": 0.7841
+        },
+        {
+          "seed": 43,
+          "tag": "resnet50_d25_rect",
+          "val_auc": 0.79,
+          "ext_auc": 0.7531,
+          "ext_ensemble": 0.799
+        },
+        {
+          "seed": 44,
+          "tag": "resnet50_d25_rect",
+          "val_auc": 0.788,
+          "ext_auc": 0.7558,
+          "ext_ensemble": 0.7996
+        }
+      ],
+      "ext_mean_sd": [
+        0.7553,
+        0.002
+      ],
+      "ens_mean_sd": [
+        0.7942,
+        0.0088
+      ]
+    },
+    {
+      "arm": "resnet50d3_pt_std",
+      "label": "3D 483 ImageNet-inflated (best 3D)",
+      "per_seed": [
+        {
+          "seed": 42,
+          "tag": "resnet50d3_pt_std",
+          "val_auc": 0.7959,
+          "ext_auc": 0.7852,
+          "ext_ensemble": 0.8059
+        },
+        {
+          "seed": 43,
+          "tag": "resnet50d3_pt_std",
+          "val_auc": 0.7896,
+          "ext_auc": 0.7546,
+          "ext_ensemble": 0.7758
+        },
+        {
+          "seed": 44,
+          "tag": "resnet50d3_pt_std",
+          "val_auc": 0.7954,
+          "ext_auc": 0.7704,
+          "ext_ensemble": 0.7913
+        }
+      ],
+      "ext_mean_sd": [
+        0.7701,
+        0.0153
+      ],
+      "ens_mean_sd": [
+        0.791,
+        0.0151
+      ]
+    }
+  ],
+  "checks": {
+    "seed42": {
+      "dose_ext": {
+        "d2_roi": 0.8211,
+        "d25_roi": 0.8515,
+        "d5_roi": 0.8299,
+        "d7_roi": 0.8097
+      },
+      "peak_slices": 3,
+      "d25_minus_best3d": 0.0663,
+      "d25_beats_best3d": true
+    },
+    "seed43": {
+      "dose_ext": {
+        "d2_roi": 0.8326,
+        "d25_roi": 0.8314,
+        "d5_roi": 0.8304,
+        "d7_roi": 0.8035
+      },
+      "peak_slices": 1,
+      "d25_minus_best3d": 0.0768,
+      "d25_beats_best3d": true
+    },
+    "seed44": {
+      "dose_ext": {
+        "d2_roi": 0.8353,
+        "d25_roi": 0.8602,
+        "d5_roi": 0.8227,
+        "d7_roi": 0.8275
+      },
+      "peak_slices": 3,
+      "d25_minus_best3d": 0.0898,
+      "d25_beats_best3d": true
+    }
+  }
+}

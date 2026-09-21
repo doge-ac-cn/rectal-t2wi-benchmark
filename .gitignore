@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pt
+*.pth
+data_processed/
+*.nii
+*.nii.gz.tmp

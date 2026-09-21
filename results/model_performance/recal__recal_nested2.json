@@ -1,0 +1,80 @@
+{
+  "dl_manual": {
+    "nested_oof_auc": 0.9682,
+    "n": 774,
+    "nested_val_folds": [
+      0.9777,
+      0.9305,
+      0.9652,
+      0.9871,
+      0.9709
+    ],
+    "test_before": {
+      "slope": 1.803,
+      "intercept": -0.455,
+      "ece": 0.1022,
+      "brier": 0.0876,
+      "auc": 0.958
+    },
+    "test_after": {
+      "slope": 0.934,
+      "intercept": -0.116,
+      "ece": 0.0398,
+      "brier": 0.0763,
+      "auc": 0.958
+    },
+    "ext_before": {
+      "slope": 1.083,
+      "intercept": -0.265,
+      "ece": 0.1029,
+      "brier": 0.1508,
+      "auc": 0.8706
+    },
+    "ext_after": {
+      "slope": 0.561,
+      "intercept": -0.061,
+      "ece": 0.132,
+      "brier": 0.1676,
+      "auc": 0.8706
+    }
+  },
+  "dl_auto": {
+    "nested_oof_auc": 0.9533,
+    "n": 769,
+    "nested_val_folds": [
+      0.9856,
+      0.9786,
+      0.9897,
+      0.9914,
+      0.7729
+    ],
+    "test_before": {
+      "slope": 5.24,
+      "intercept": -1.21,
+      "ece": 0.2652,
+      "brier": 0.1479,
+      "auc": 0.9585
+    },
+    "test_after": {
+      "slope": 1.292,
+      "intercept": -0.206,
+      "ece": 0.0597,
+      "brier": 0.0738,
+      "auc": 0.9585
+    },
+    "ext_before": {
+      "slope": 2.007,
+      "intercept": 0.314,
+      "ece": 0.1497,
+      "brier": 0.1843,
+      "auc": 0.8187
+    },
+    "ext_after": {
+      "slope": 0.494,
+      "intercept": 0.698,
+      "ece": 0.1735,
+      "brier": 0.1981,
+      "auc": 0.8187
+    }
+  }
+}

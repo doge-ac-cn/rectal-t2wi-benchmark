@@ -1,0 +1,155 @@
+{
+  "note": " anisotropy intervention matrix (ResNet50, 5-fold, seed 42); resampling spacing is the ONLY change vs main-grid counterparts",
+  "incomplete_arms": [],
+  "arms": [
+    {
+      "arm": "2.5D tumor-ROI @ z-iso 0.7188mm",
+      "dir": "experiments/outputs/resnet50_ziso_d25_roi",
+      "n_folds": 5,
+      "val_auc_mean_std": [
+        0.8235,
+        0.017
+      ],
+      "ext_auc_mean_std": [
+        0.8297,
+        0.0164
+      ],
+      "per_fold_ext": [
+        0.8482,
+        0.8163,
+        0.8193,
+        0.8509,
+        0.8137
+      ],
+      "ext_ensemble_auc": 0.8581,
+      "n_ens_folds": 5,
+      "summary_source": "summary.json",
+      "complete_5fold": true
+    },
+    {
+      "arm": "3D 483 @ z-iso 0.7188mm (ImageNet-inflated)",
+      "dir": "experiments/outputs/ziso_m0_48",
+      "n_folds": 5,
+      "val_auc_mean_std": [
+        0.7895,
+        0.0389
+      ],
+      "ext_auc_mean_std": [
+        0.7255,
+        0.0287
+      ],
+      "per_fold_ext": [
+        0.6846,
+        0.7162,
+        0.715,
+        0.7698,
+        0.7421
+      ],
+      "ext_ensemble_auc": 0.7472,
+      "n_ens_folds": 5,
+      "summary_source": "summary.json",
+      "complete_5fold": true
+    },
+    {
+      "arm": "2.5D tumor-ROI @ z=3.0mm",
+      "dir": "experiments/outputs/resnet50_z3_d25_roi",
+      "n_folds": 5,
+      "val_auc_mean_std": [
+        0.8284,
+        0.0219
+      ],
+      "ext_auc_mean_std": [
+        0.8506,
+        0.0354
+      ],
+      "per_fold_ext": [
+        0.8843,
+        0.8951,
+        0.8339,
+        0.842,
+        0.7976
+      ],
+      "ext_ensemble_auc": 0.8742,
+      "n_ens_folds": 5,
+      "summary_source": "summary.json",
+      "complete_5fold": true
+    },
+    {
+      "arm": "2.5D tumor-ROI @ z=6.0mm",
+      "dir": "experiments/outputs/resnet50_z6_d25_roi",
+      "n_folds": 5,
+      "val_auc_mean_std": [
+        0.8235,
+        0.0194
+      ],
+      "ext_auc_mean_std": [
+        0.8159,
+        0.025
+      ],
+      "per_fold_ext": [
+        0.8217,
+        0.8318,
+        0.8468,
+        0.805,
+        0.774
+      ],
+      "ext_ensemble_auc": 0.845,
+      "n_ens_folds": 5,
+      "summary_source": "summary.json",
+      "complete_5fold": true
+    },
+    {
+      "arm": "2D tumor-ROI @ z=6.0mm (control)",
+      "dir": "experiments/outputs/resnet50_z6_d2_roi",
+      "n_folds": 5,
+      "val_auc_mean_std": [
+        0.814,
+        0.0196
+      ],
+      "ext_auc_mean_std": [
+        0.8203,
+        0.0229
+      ],
+      "per_fold_ext": [
+        0.864,
+        0.8068,
+        0.8116,
+        0.8202,
+        0.799
+      ],
+      "ext_ensemble_auc": 0.8563,
+      "n_ens_folds": 5,
+      "summary_source": "summary.json",
+      "complete_5fold": true
+    },
+    {
+      "arm": "2.5D tumor-ROI @ inplane-48 (3D-window-matched)",
+      "dir": "experiments/outputs/resnet50_ip48_d25_roi",
+      "n_folds": 5,
+      "val_auc_mean_std": [
+        0.7759,
+        0.0317
+      ],
+      "ext_auc_mean_std": [
+        0.7529,
+        0.0592
+      ],
+      "per_fold_ext": [
+        0.6619,
+        0.715,
+        0.8304,
+        0.763,
+        0.7943
+      ],
+      "ext_ensemble_auc": 0.8145,
+      "n_ens_folds": 5,
+      "summary_source": "summary.json",
+      "complete_5fold": true
+    }
+  ],
+  "main_grid_anchors": {
+    "2.5D tumor-ROI": "0.852±0.037 / ens 0.875",
+    "3D inflated 483": "0.785±0.028 / ens 0.806",
+    "2D tumor-ROI": "0.821±0.022"
+  }
+}

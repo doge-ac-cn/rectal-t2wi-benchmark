@@ -1,0 +1,39 @@
+{
+  "feat_csv": "data_processed/radiomics_features_auto.csv",
+  "config": "none+LGB(300,31,0.1)",
+  "cv_auc_mean": 0.7928,
+  "cv_auc_std": 0.0239,
+  "train": {
+    "set": "train",
+    "n": 774,
+    "label1": 325,
+    "auc": 1.0,
+    "acc": 1.0,
+    "sen": 1.0,
+    "spe": 1.0,
+    "ppv": 1.0,
+    "f1": 1.0
+  },
+  "test": {
+    "set": "test",
+    "n": 194,
+    "label1": 81,
+    "auc": 0.7805,
+    "acc": 0.7423,
+    "sen": 0.679,
+    "spe": 0.7876,
+    "ppv": 0.6962,
+    "f1": 0.6875
+  },
+  "external": {
+    "set": "external_ts",
+    "n": 82,
+    "label1": 43,
+    "auc": 0.8694,
+    "acc": 0.7805,
+    "sen": 0.7674,
+    "spe": 0.7949,
+    "ppv": 0.8049,
+    "f1": 0.7857
+  }
+}

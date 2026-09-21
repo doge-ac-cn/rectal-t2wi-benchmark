@@ -1,0 +1,97 @@
+{
+  "note": "purpose-trained T2vT3 radiomics under the nested-CV ensemble protocol (train n=670)",
+  "manual": {
+    "members": {
+      "LR": {
+        "model": "LR C=0.01",
+        "l1_C": 0.03,
+        "inner_cv": 0.8096
+      },
+      "SVM": {
+        "model": "SVM-rbf C=1.0 gamma=scale",
+        "l1_C": 3.0,
+        "inner_cv": 0.815
+      },
+      "RF": {
+        "model": "RF n=500 depth=None",
+        "l1_C": 0.1,
+        "inner_cv": 0.8148
+      },
+      "DT": {
+        "model": "DT depth=None msl=30",
+        "l1_C": 0.03,
+        "inner_cv": 0.7521
+      },
+      "LGBM": {
+        "model": "LGBM n=300 lr=0.05 leaves=31",
+        "l1_C": 0.3,
+        "inner_cv": 0.8182
+      }
+    },
+    "test": {
+      "n": 173,
+      "pos": 81,
+      "auc": 0.8497,
+      "ci95": [
+        0.7904,
+        0.9018
+      ]
+    },
+    "ext": {
+      "n": 77,
+      "pos": 43,
+      "auc": 0.8673,
+      "ci95": [
+        0.7784,
+        0.9371
+      ]
+    }
+  },
+  "auto": {
+    "members": {
+      "LR": {
+        "model": "LR C=0.1",
+        "l1_C": 0.03,
+        "inner_cv": 0.7319
+      },
+      "SVM": {
+        "model": "SVM-rbf C=0.1 gamma=scale",
+        "l1_C": 0.03,
+        "inner_cv": 0.7345
+      },
+      "RF": {
+        "model": "RF n=500 depth=10",
+        "l1_C": 1.0,
+        "inner_cv": 0.7302
+      },
+      "DT": {
+        "model": "DT depth=3 msl=30",
+        "l1_C": 0.1,
+        "inner_cv": 0.7122
+      },
+      "LGBM": {
+        "model": "LGBM n=300 lr=0.1 leaves=31",
+        "l1_C": 3.0,
+        "inner_cv": 0.7028
+      }
+    },
+    "test": {
+      "n": 173,
+      "pos": 81,
+      "auc": 0.7241,
+      "ci95": [
+        0.6445,
+        0.7968
+      ]
+    },
+    "ext": {
+      "n": 77,
+      "pos": 43,
+      "auc": 0.7989,
+      "ci95": [
+        0.6888,
+        0.8959
+      ]
+    }
+  }
+}

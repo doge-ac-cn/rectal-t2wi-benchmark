@@ -1,0 +1,21 @@
+{
+  "tag": "resnet50d3_pt_std",
+  "model": "resnet50",
+  "variant": "d3_m0_48",
+  "val_auc_mean_std": [
+    0.7958562975677517,
+    0.039466520980131745
+  ],
+  "ext_auc_mean_std": [
+    0.785211687537269,
+    0.02768323068992062
+  ],
+  "per_fold_ext": [
+    0.7939773405,
+    0.7990459153,
+    0.809183065,
+    0.7310673822,
+    0.7927847346
+  ],
+  "note": "Regenerated in package v1.3 from per-fold external predictions (fold AUCs, population SD) and best-epoch validation AUCs from the shipped training histories; the original summary file in this directory was truncated/stale. The regeneration method was validated bit-exact against intact arms before use. See REBUILD_LOG.md."
+}

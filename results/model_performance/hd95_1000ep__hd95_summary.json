@@ -1,0 +1,29 @@
+{
+ "RC_A_val": {
+  "n": 952,
+  "dice_mean": 0.7233,
+  "hd95_median": 5.002,
+  "hd95_mean": 13.637,
+  "hd95_p75": 16.64,
+  "assd_median": 1.433,
+  "frac_hd95_gt5mm": 0.5021,
+  "frac_hd95_gt10mm": 0.3435
+ },
+ "RC_B": {
+  "n": 82,
+  "dice_mean": 0.7238,
+  "hd95_median": 5.188,
+  "hd95_mean": 12.135,
+  "hd95_p75": 14.425,
+  "assd_median": 1.514,
+  "frac_hd95_gt5mm": 0.5122,
+  "frac_hd95_gt10mm": 0.3537
+ },
+ "_n_errors": 16,
+ "_crosscheck_vs_dice1000ep": {
+  "n": 1050,
+  "maxabsdice": 0.0,
+  "ndiff_gt_1e-9": 0
+ },
+ "_note": "1000-epoch auto-contour chain; matches manuscript Table S8b. Supersedes legacy/hd95_250ep (250-epoch chain, kept for provenance only)."
+}

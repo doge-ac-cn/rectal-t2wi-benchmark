@@ -1,0 +1,71 @@
+{
+  "note": "contour-perturbation analysis re-anchored to the nested-CV ensemble radiomics model (five-family soft vote, single L1 stage); perturbed features reused from the upstream cache",
+  "locked_model": {
+    "protocol": "nested-CV ensemble (LR/SVM/RF/DT/LGBM soft vote)",
+    "n_union_selected": 203,
+    "members": {
+      "LR": "LR C=0.01",
+      "SVM": "SVM-rbf C=1.0 gamma=0.001",
+      "RF": "RF n=500 depth=None",
+      "DT": "DT depth=5 msl=30",
+      "LGBM": "LGBM n=300 lr=0.1 leaves=31"
+    }
+  },
+  "selfcheck": {
+    "manual_ext_auc": 0.8861,
+    "anchor_ext": 0.8861,
+    "manual_test_auc": 0.864,
+    "anchor_test": 0.864,
+    "match": true
+  },
+  "locked_model_auc_curves": {
+    "test": {
+      "orig": 0.864,
+      "dil1": 0.8739,
+      "dil2": 0.7643,
+      "dil3": 0.5477,
+      "ero1": 0.813,
+      "ero2": 0.7426,
+      "ero3": 0.6827
+    },
+    "ext": {
+      "orig": 0.8861,
+      "dil1": 0.836,
+      "dil2": 0.734,
+      "dil3": 0.6225,
+      "ero1": 0.867,
+      "ero2": 0.839,
+      "ero3": 0.6714
+    }
+  },
+  "feature_stability": {
+    "median_rel_drift_quartiles": [
+      0.2395,
+      0.3774,
+      0.5502
+    ],
+    "frac_stable_le_0.1": 0.0691,
+    "n_stable_feats": 91,
+    "n_feats": 1316
+  },
+  "robust_subset_rescue": {
+    "n_stable_feats": 91,
+    "members": {
+      "LR": "LR C=10.0",
+      "SVM": "SVM-linear C=10.0",
+      "RF": "RF n=500 depth=10",
+      "DT": "DT depth=3 msl=10",
+      "LGBM": "LGBM n=300 lr=0.05 leaves=15"
+    },
+    "subset_manual_ext": 0.7007,
+    "subset_manual_test": 0.714,
+    "subset_auto_ext": 0.6518,
+    "subset_auto_test": 0.6552,
+    "subset_dil2_ext": 0.7597
+  },
+  "volume_check": {
+    "feature": "original_shape_MeshVolume",
+    "dil2_median_ratio": 1.6424,
+    "dil2_frac_increase": 1.0
+  }
+}

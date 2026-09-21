@@ -1,0 +1,57 @@
+{
+  "note": "vendor-stratified internal test-194 AUC, radiomics nested-CV ensemble (DL rows from vendor holdout unchanged)",
+  "radiomics_manual": {
+    "GE": {
+      "n": 124,
+      "pos": 55,
+      "auc": 0.8717,
+      "ci95": [
+        0.8064,
+        0.9275
+      ]
+    },
+    "Siemens": {
+      "n": 70,
+      "pos": 26,
+      "auc": 0.8505,
+      "ci95": [
+        0.7467,
+        0.9378
+      ]
+    },
+    "GE_minus_Siemens": {
+      "delta": 0.0212,
+      "ci95": [
+        -0.0877,
+        0.1424
+      ]
+    }
+  },
+  "radiomics_auto": {
+    "GE": {
+      "n": 124,
+      "pos": 55,
+      "auc": 0.7478,
+      "ci95": [
+        0.6581,
+        0.8303
+      ]
+    },
+    "Siemens": {
+      "n": 70,
+      "pos": 26,
+      "auc": 0.7806,
+      "ci95": [
+        0.6678,
+        0.8801
+      ]
+    },
+    "GE_minus_Siemens": {
+      "delta": -0.0328,
+      "ci95": [
+        -0.1734,
+        0.1076
+      ]
+    }
+  }
+}

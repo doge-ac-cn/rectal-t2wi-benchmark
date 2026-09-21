@@ -1,0 +1,66 @@
+{
+  "imputed_cases": [
+    {
+      "id": "35677940788a",
+      "split": "train",
+      "label": 0
+    },
+    {
+      "id": "669ffc3c6fde",
+      "split": "train",
+      "label": 0
+    },
+    {
+      "id": "17af8f058f53",
+      "split": "train",
+      "label": 0
+    },
+    {
+      "id": "2334f6e38a89",
+      "split": "train",
+      "label": 0
+    },
+    {
+      "id": "f97ddb3b9394",
+      "split": "train",
+      "label": 1
+    }
+  ],
+  "eval_side_test": {
+    "n_full": 194,
+    "n_excluded": 0,
+    "auc_full": 0.7805,
+    "auc_excl_imputed": 0.7805,
+    "delta": 0.0
+  },
+  "eval_side_ext": {
+    "n_full": 82,
+    "n_excluded": 0,
+    "auc_full": 0.8694,
+    "auc_excl_imputed": 0.8694,
+    "delta": 0.0
+  },
+  "train_side": {
+    "auc_full_train774": 0.873,
+    "auc_clean_train": 0.8545,
+    "delta": -0.0185,
+    "anchor_radiomics_best": 0.8686
+  },
+  "verdict": {
+    "abs_delta": 0.0185,
+    "insensitive_le_0.01": false
+  },
+  "random_drop_control": {
+    "random_drop5_ext_auc": {
+      "mean": 0.841,
+      "std": 0.013,
+      "min": 0.8056,
+      "max": 0.8658,
+      "n_rep": 20
+    },
+    "imputed_drop5_ext_auc": 0.8545,
+    "full_train774_ext_auc_reference_repro": 0.873,
+    "z_vs_random": 1.016,
+    "verdict": "no special penalty: capacity effect, not imputation bias"
+  }
+}

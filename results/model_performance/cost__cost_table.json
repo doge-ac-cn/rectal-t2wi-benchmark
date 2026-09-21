@@ -1,0 +1,26 @@
+{
+  "convnextB_2.5D_3x224": {
+    "params_M": 87.6,
+    "flops_G": 30.71,
+    "latency_ms_batch1": 11.4,
+    "latency_sd": 0.3
+  },
+  "resnet50_2.5D_3x224": {
+    "params_M": 23.5,
+    "flops_G": 8.17,
+    "latency_ms_batch1": 6.1,
+    "latency_sd": 0.1
+  },
+  "resnet50_3D_48iso": {
+    "params_M": 46.2,
+    "flops_G": 34.2,
+    "latency_ms_batch1": 13.3,
+    "latency_sd": 2.8
+  },
+  "resnet50_3D_48x48x16nat": {
+    "params_M": 46.2,
+    "flops_G": 11.4,
+    "latency_ms_batch1": 7.4,
+    "latency_sd": 0.5
+  }
+}

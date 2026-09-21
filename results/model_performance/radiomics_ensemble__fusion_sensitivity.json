@@ -1,0 +1,22 @@
+{
+  "manual": {
+    "equal": 0.8891,
+    "valAUC_weighted": 0.8897,
+    "w_rad": 0.461,
+    "inverse_var_logit": 0.8921,
+    "w_iv_rad": 0.628,
+    "best_single": 0.8706,
+    "rad_alone_ext": 0.8861,
+    "dl_alone_ext": 0.8706
+  },
+  "auto": {
+    "equal": 0.8366,
+    "valAUC_weighted": 0.8402,
+    "w_rad": 0.444,
+    "inverse_var_logit": 0.8384,
+    "w_iv_rad": 0.319,
+    "best_single": 0.8187,
+    "rad_alone_ext": 0.8205,
+    "dl_alone_ext": 0.8187
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "radiomics_test194": {
+    "tag": "radiomics_test",
+    "n": 194,
+    "strata": [
+      {
+        "stratum": "[0.8,1.01)",
+        "n": 43,
+        "n_pos": 19,
+        "dice_mean": 0.852,
+        "auc_man": 0.8816,
+        "auc_aut": 0.7675,
+        "delta": 0.114,
+        "delong_p": 0.0316,
+        "acc_man": 0.791,
+        "acc_aut": 0.791,
+        "mcnemar_p": 1.0,
+        "harmed": 2,
+        "helped": 2,
+        "mean_abs_dp": 0.0868
+      },
+      {
+        "stratum": "[0.6,0.8)",
+        "n": 87,
+        "n_pos": 41,
+        "dice_mean": 0.714,
+        "auc_man": 0.93,
+        "auc_aut": 0.7736,
+        "delta": 0.1564,
+        "delong_p": 0.0002,
+        "acc_man": 0.851,
+        "acc_aut": 0.701,
+        "mcnemar_p": 0.0072,
+        "harmed": 17,
+        "helped": 4,
+        "mean_abs_dp": 0.2338
+      },
+      {
+        "stratum": "[0.0,0.6)",
+        "n": 64,
+        "n_pos": 21,
+        "dice_mean": 0.444,
+        "auc_man": 0.8339,
+        "auc_aut": 0.7951,
+        "delta": 0.0388,
+        "delong_p": 0.4871,
+        "acc_man": 0.812,
+        "acc_aut": 0.766,
+        "mcnemar_p": 0.5488,
+        "harmed": 7,
+        "helped": 4,
+        "mean_abs_dp": 0.2007
+      }
+    ],
+    "spearman_dice_vs_absdp": [
+      -0.062,
+      0.3934
+    ],
+    "spearman_dice_vs_vol": [
+      0.439,
+      0.0
+    ],
+    "spearman_absdp_vs_vol": [
+      0.068,
+      0.34905
+    ],
+    "partial_spearman_dice_vs_absdp_ctrl_vol": -0.102,
+    "overall_auc_man": 0.8881,
+    "overall_auc_aut": 0.7805
+  },
+  "radiomics_ext82": {
+    "tag": "radiomics_ext",
+    "n": 82,
+    "strata": [
+      {
+        "stratum": "[0.7,1.01)",
+        "n": 47,
+        "n_pos": 23,
+        "dice_mean": 0.789,
+        "auc_man": 0.9094,
+        "auc_aut": 0.9004,
+        "delta": 0.0091,
+        "delong_p": 0.8117,
+        "acc_man": 0.766,
+        "acc_aut": 0.766,
+        "mcnemar_p": 1.0,
+        "harmed": 3,
+        "helped": 3,
+        "mean_abs_dp": 0.1465
+      },
+      {
+        "stratum": "[0.5,0.7)",
+        "n": 26,
+        "n_pos": 18,
+        "dice_mean": 0.611,
+        "auc_man": 0.8819,
+        "auc_aut": 0.8403,
+        "delta": 0.0417,
+        "delong_p": 0.4683,
+        "acc_man": 0.808,
+        "acc_aut": 0.769,
+        "mcnemar_p": 1.0,
+        "harmed": 2,
+        "helped": 1,
+        "mean_abs_dp": 0.1741
+      },
+      {
+        "stratum": "[0.0,0.5)",
+        "n": 9,
+        "n_pos": 2,
+        "dice_mean": 0.277,
+        "auc_man": 0.7857,
+        "auc_aut": 0.6429,
+        "delta": 0.1429,
+        "delong_p": 0.6547,
+        "acc_man": 0.778,
+        "acc_aut": 0.889,
+        "mcnemar_p": 1.0,
+        "harmed": 0,
+        "helped": 1,
+        "mean_abs_dp": 0.149
+      }
+    ],
+    "spearman_dice_vs_absdp": [
+      -0.015,
+      0.89661
+    ],
+    "spearman_dice_vs_vol": [
+      0.425,
+      7e-05
+    ],
+    "spearman_absdp_vs_vol": [
+      -0.054,
+      0.62748
+    ],
+    "partial_spearman_dice_vs_absdp_ctrl_vol": 0.009,
+    "overall_auc_man": 0.8951,
+    "overall_auc_aut": 0.8694
+  },
+  "dl_ext82": {
+    "tag": "dl_ext",
+    "n": 82,
+    "strata": [
+      {
+        "stratum": "[0.7,1.01)",
+        "n": 47,
+        "n_pos": 23,
+        "dice_mean": 0.789,
+        "auc_man": 0.8551,
+        "auc_aut": 0.8659,
+        "delta": -0.0109,
+        "delong_p": 0.7902,
+        "acc_man": 0.702,
+        "acc_aut": 0.766,
+        "mcnemar_p": 0.5488,
+        "harmed": 4,
+        "helped": 7,
+        "mean_abs_dp": 0.1904
+      },
+      {
+        "stratum": "[0.5,0.7)",
+        "n": 26,
+        "n_pos": 18,
+        "dice_mean": 0.611,
+        "auc_man": 0.9514,
+        "auc_aut": 0.8542,
+        "delta": 0.0972,
+        "delong_p": 0.1838,
+        "acc_man": 0.846,
+        "acc_aut": 0.731,
+        "mcnemar_p": 0.375,
+        "harmed": 4,
+        "helped": 1,
+        "mean_abs_dp": 0.2061
+      },
+      {
+        "stratum": "[0.0,0.5)",
+        "n": 9,
+        "n_pos": 2,
+        "dice_mean": 0.277,
+        "auc_man": 0.5714,
+        "auc_aut": 0.6429,
+        "delta": -0.0714,
+        "delong_p": 0.631,
+        "acc_man": 0.667,
+        "acc_aut": 0.778,
+        "mcnemar_p": 1.0,
+        "harmed": 1,
+        "helped": 2,
+        "mean_abs_dp": 0.226
+      }
+    ],
+    "spearman_dice_vs_absdp": [
+      -0.101,
+      0.3681
+    ],
+    "spearman_dice_vs_vol": [
+      0.425,
+      7e-05
+    ],
+    "spearman_absdp_vs_vol": [
+      -0.045,
+      0.68542
+    ],
+    "partial_spearman_dice_vs_absdp_ctrl_vol": -0.09,
+    "overall_auc_man": 0.8706,
+    "overall_auc_aut": 0.8187
+  },
+  "verdict_radiomics_test": {
+    "stratum": "[0.8,1.01)",
+    "delta_auc": 0.114,
+    "mean_abs_dp": 0.0868,
+    "H1_segm_bottleneck": false,
+    "H2_systemic": true
+  },
+  "verdict_dl_ext": {
+    "stratum": "[0.7,1.01)",
+    "delta_auc": -0.0109,
+    "mean_abs_dp": 0.1904,
+    "H1_segm_bottleneck": false,
+    "H2_systemic": true
+  },
+  "top10_absdp_radiomics_test": [
+    {
+      "pid": "4cfc1a79be5b",
+      "dice": 0.677,
+      "p_man": 0.0,
+      "p_aut": 0.995,
+      "y_man": 0
+    },
+    {
+      "pid": "1985c3112a2f",
+      "dice": 0.738,
+      "p_man": 0.0,
+      "p_aut": 0.984,
+      "y_man": 0
+    },
+    {
+      "pid": "116ef3673bfa",
+      "dice": 0.276,
+      "p_man": 0.0,
+      "p_aut": 0.976,
+      "y_man": 0
+    },
+    {
+      "pid": "14b557bbd70f",
+      "dice": 0.714,
+      "p_man": 0.973,
+      "p_aut": 0.0,
+      "y_man": 1
+    },
+    {
+      "pid": "8ed74092713f",
+      "dice": 0.145,
+      "p_man": 0.0,
+      "p_aut": 0.969,
+      "y_man": 1
+    },
+    {
+      "pid": "f83107993ef2",
+      "dice": 0.674,
+      "p_man": 0.993,
+      "p_aut": 0.032,
+      "y_man": 1
+    },
+    {
+      "pid": "48466eadb336",
+      "dice": 0.849,
+      "p_man": 0.961,
+      "p_aut": 0.001,
+      "y_man": 1
+    },
+    {
+      "pid": "9dddea58af00",
+      "dice": 0.535,
+      "p_man": 0.0,
+      "p_aut": 0.952,
+      "y_man": 0
+    },
+    {
+      "pid": "c12fe5a51b42",
+      "dice": 0.52,
+      "p_man": 0.021,
+      "p_aut": 0.967,
+      "y_man": 0
+    },
+    {
+      "pid": "14db286fe6b4",
+      "dice": 0.74,
+      "p_man": 0.013,
+      "p_aut": 0.958,
+      "y_man": 1
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "n_complete_oof": 759,
+  "oof_auc": {
+    "rad1000": 0.7841,
+    "dl1000": 0.9185
+  },
+  "w_rad_oofauc": 0.4605,
+  "w_rad_invlogit": 0.3563,
+  "equal": {
+    "oof": 0.873,
+    "test": 0.8325,
+    "ext": 0.833
+  },
+  "oofauc_weighted": {
+    "oof": 0.8784,
+    "test": 0.8383,
+    "ext": 0.8348
+  },
+  "inverse_var_logit": {
+    "oof": 0.8911,
+    "test": 0.8536,
+    "ext": 0.8384
+  },
+  "single_best_radiomics": {
+    "oof": 0.7841,
+    "test": 0.7405,
+    "ext": 0.811
+  },
+  "single_best_dl": {
+    "oof": 0.9185,
+    "test": 0.8813,
+    "ext": 0.8384
+  }
+}

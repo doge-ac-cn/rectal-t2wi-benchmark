@@ -1,0 +1,76 @@
+{
+  "note": "radiomics ensemble on 1000ep auto contours (protocol, seed 42); 16 RC_A empty-mask rows imputed with train medians (v2.0 protocol: 250ep chain imputed 5 extraction failures the same way); DL branch gradable-only (193/194 test); rad-vs-DL test DeLong on the 193-case common set",
+  "auto1000_ensemble": {
+    "auc": {
+      "test": 0.7413,
+      "ext": 0.811
+    },
+    "ci95": {
+      "test": [
+        0.6685,
+        0.8112
+      ],
+      "ext": [
+        0.7138,
+        0.897
+      ]
+    }
+  },
+  "delong_pairs": {
+    "rad_man_vs_rad1000_test": {
+      "auc1": 0.864,
+      "auc2": 0.7413,
+      "delta": 0.1227,
+      "p": 4e-05,
+      "ci95": [
+        0.0657,
+        0.1814
+      ]
+    },
+    "rad_man_vs_rad1000_ext": {
+      "auc1": 0.8861,
+      "auc2": 0.811,
+      "delta": 0.0751,
+      "p": 0.051724,
+      "ci95": [
+        -0.0,
+        0.1544
+      ]
+    },
+    "rad1000_vs_dl1000_test": {
+      "auc1": 0.7405,
+      "auc2": 0.8813,
+      "delta": -0.1408,
+      "p": 3e-06,
+      "ci95": [
+        -0.2013,
+        -0.0836
+      ]
+    },
+    "rad1000_vs_dl1000_ext": {
+      "auc1": 0.811,
+      "auc2": 0.8384,
+      "delta": -0.0274,
+      "p": 0.406343,
+      "ci95": [
+        -0.0944,
+        0.0381
+      ]
+    },
+    "rad_man_vs_dl_man_ext": {
+      "auc1": 0.8861,
+      "auc2": 0.8706,
+      "delta": 0.0155,
+      "p": 0.508777,
+      "ci95": [
+        -0.0287,
+        0.0649
+      ]
+    }
+  },
+  "dl_auto1000": {
+    "ext_auc_ens": 0.8384,
+    "test_auc_ens": 0.8813,
+    "test_n": 193
+  }
+}

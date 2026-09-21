@@ -1,0 +1,567 @@
+{
+  "note": " radiomics protocol with L1-strength hyperparameter search: L1 selection C in joint grid with classifier grid, per-CV-fold L1 refit (no selection leakage); user-directed fix of fixed-C=1 asymmetry critique; no other dimensionality-reduction methods",
+  "selfcheck": {
+    "sklearn_agree_manual_ext": true,
+    "delong_identity_guard_p": 1.0,
+    "labels_match_index": true,
+    "dl_ext_labels_aligned": true,
+    "best_manual": {
+      "model": "SVM-rbf C=1.0 gamma=0.001",
+      "l1_C": 0.1,
+      "cv_auc_mean": 0.8438,
+      "cv_auc_std": 0.0178,
+      "folds": [
+        0.8474,
+        0.8274,
+        0.8574,
+        0.8672,
+        0.8198
+      ]
+    },
+    "best_auto": {
+      "model": "SVM-rbf C=10.0 gamma=0.001",
+      "l1_C": 0.03,
+      "cv_auc_mean": 0.7667,
+      "cv_auc_std": 0.041,
+      "folds": [
+        0.7137,
+        0.7662,
+        0.733,
+        0.8285,
+        0.7923
+      ]
+    },
+    "n_selected_manual": 89,
+    "n_selected_auto": 21
+  },
+  "manual": {
+    "source": "manual",
+    "l1_grid": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1.0,
+      3.0
+    ],
+    "n_l1_selected": 89,
+    "sel_cols": [
+      "original_shape_Flatness",
+      "original_shape_Maximum2DDiameterSlice",
+      "original_shape_MinorAxisLength",
+      "original_shape_Sphericity",
+      "original_firstorder_10Percentile",
+      "original_firstorder_RootMeanSquared",
+      "original_gldm_LargeDependenceLowGrayLevelEmphasis",
+      "log-sigma-1-0-mm-3D_firstorder_Minimum",
+      "log-sigma-1-0-mm-3D_glcm_Imc1",
+      "log-sigma-1-0-mm-3D_glrlm_HighGrayLevelRunEmphasis",
+      "log-sigma-1-0-mm-3D_glrlm_LowGrayLevelRunEmphasis",
+      "log-sigma-1-0-mm-3D_glszm_SizeZoneNonUniformity",
+      "log-sigma-1-0-mm-3D_glszm_ZoneEntropy",
+      "log-sigma-2-0-mm-3D_firstorder_Kurtosis",
+      "log-sigma-2-0-mm-3D_glcm_ClusterProminence",
+      "log-sigma-2-0-mm-3D_glcm_Imc1",
+      "log-sigma-2-0-mm-3D_glrlm_RunVariance",
+      "log-sigma-2-0-mm-3D_glszm_HighGrayLevelZoneEmphasis",
+      "log-sigma-2-0-mm-3D_glszm_LowGrayLevelZoneEmphasis",
+      "log-sigma-2-0-mm-3D_glszm_ZoneEntropy",
+      "log-sigma-2-0-mm-3D_ngtdm_Busyness",
+      "log-sigma-3-0-mm-3D_firstorder_Kurtosis",
+      "log-sigma-3-0-mm-3D_glcm_ClusterProminence",
+      "log-sigma-3-0-mm-3D_glszm_SizeZoneNonUniformity",
+      "log-sigma-3-0-mm-3D_glszm_SmallAreaLowGrayLevelEmphasis",
+      "log-sigma-3-0-mm-3D_ngtdm_Strength",
+      "log-sigma-4-0-mm-3D_firstorder_Maximum",
+      "log-sigma-4-0-mm-3D_glszm_GrayLevelNonUniformity",
+      "log-sigma-4-0-mm-3D_glszm_LargeAreaLowGrayLevelEmphasis",
+      "log-sigma-4-0-mm-3D_glszm_ZoneEntropy",
+      "log-sigma-4-0-mm-3D_ngtdm_Busyness",
+      "log-sigma-4-0-mm-3D_ngtdm_Contrast",
+      "log-sigma-5-0-mm-3D_firstorder_Skewness",
+      "log-sigma-5-0-mm-3D_firstorder_Variance",
+      "log-sigma-5-0-mm-3D_glcm_ClusterShade",
+      "log-sigma-5-0-mm-3D_glrlm_ShortRunLowGrayLevelEmphasis",
+      "log-sigma-5-0-mm-3D_glszm_GrayLevelNonUniformity",
+      "log-sigma-5-0-mm-3D_glszm_SmallAreaEmphasis",
+      "wavelet-LLH_glszm_SizeZoneNonUniformityNormalized",
+      "wavelet-LHL_firstorder_Range",
+      "wavelet-LHL_glcm_Imc2",
+      "wavelet-LHL_glszm_SmallAreaEmphasis",
+      "wavelet-LHL_glszm_ZoneEntropy",
+      "wavelet-LHH_firstorder_Maximum",
+      "wavelet-LHH_glcm_ClusterProminence",
+      "wavelet-LHH_glcm_Contrast",
+      "wavelet-LHH_glcm_DifferenceAverage",
+      "wavelet-LHH_glcm_Idm",
+      "wavelet-LHH_glcm_Idmn",
+      "wavelet-LHH_glcm_Imc2",
+      "wavelet-LHH_glcm_InverseVariance",
+      "wavelet-LHH_glrlm_HighGrayLevelRunEmphasis",
+      "wavelet-LHH_glrlm_LowGrayLevelRunEmphasis",
+      "wavelet-LHH_glszm_SmallAreaLowGrayLevelEmphasis",
+      "wavelet-LHH_gldm_DependenceNonUniformityNormalized",
+      "wavelet-LHH_ngtdm_Complexity",
+      "wavelet-LHH_ngtdm_Contrast",
+      "wavelet-HLL_glcm_MaximumProbability",
+      "wavelet-HLL_glrlm_HighGrayLevelRunEmphasis",
+      "wavelet-HLL_glrlm_LowGrayLevelRunEmphasis",
+      "wavelet-HLL_glszm_SizeZoneNonUniformityNormalized",
+      "wavelet-HLL_glszm_ZoneEntropy",
+      "wavelet-HLH_glrlm_HighGrayLevelRunEmphasis",
+      "wavelet-HLH_glrlm_LowGrayLevelRunEmphasis",
+      "wavelet-HLH_glszm_GrayLevelNonUniformity",
+      "wavelet-HLH_glszm_ZoneEntropy",
+      "wavelet-HHL_firstorder_InterquartileRange",
+      "wavelet-HHL_firstorder_Median",
+      "wavelet-HHL_glrlm_GrayLevelNonUniformityNormalized",
+      "wavelet-HHL_glszm_HighGrayLevelZoneEmphasis",
+      "wavelet-HHL_glszm_LowGrayLevelZoneEmphasis",
+      "wavelet-HHL_glszm_SmallAreaHighGrayLevelEmphasis",
+      "wavelet-HHH_firstorder_Entropy",
+      "wavelet-HHH_firstorder_Uniformity",
+      "wavelet-HHH_glcm_DifferenceEntropy",
+      "wavelet-HHH_glcm_DifferenceVariance",
+      "wavelet-HHH_glcm_Imc1",
+      "wavelet-HHH_glrlm_LowGrayLevelRunEmphasis",
+      "wavelet-HHH_gldm_GrayLevelVariance",
+      "wavelet-HHH_gldm_HighGrayLevelEmphasis",
+      "wavelet-HHH_gldm_LowGrayLevelEmphasis",
+      "wavelet-LLL_firstorder_10Percentile",
+      "wavelet-LLL_glszm_GrayLevelNonUniformityNormalized",
+      "wavelet-LLL_glszm_GrayLevelVariance",
+      "wavelet-LLL_glszm_HighGrayLevelZoneEmphasis",
+      "wavelet-LLL_glszm_SmallAreaHighGrayLevelEmphasis",
+      "wavelet-LLL_glszm_ZoneEntropy",
+      "wavelet-LLL_gldm_DependenceVariance",
+      "wavelet-LLL_ngtdm_Strength"
+    ],
+    "n_selected_per_C_full_train": {
+      "0.01": 13,
+      "0.03": 38,
+      "0.1": 89,
+      "0.3": 180,
+      "1.0": 306,
+      "3.0": 361
+    },
+    "best": {
+      "model": "SVM-rbf C=1.0 gamma=0.001",
+      "l1_C": 0.1,
+      "cv_auc_mean": 0.8438,
+      "cv_auc_std": 0.0178,
+      "folds": [
+        0.8474,
+        0.8274,
+        0.8574,
+        0.8672,
+        0.8198
+      ]
+    },
+    "top_cv_rows": [
+      {
+        "model": "SVM-rbf C=1.0 gamma=0.001",
+        "l1_C": 0.1,
+        "cv_auc_mean": 0.8438,
+        "cv_auc_std": 0.0178,
+        "folds": [
+          0.8474,
+          0.8274,
+          0.8574,
+          0.8672,
+          0.8198
+        ]
+      },
+      {
+        "model": "SVM-rbf C=0.1 gamma=0.001",
+        "l1_C": 0.1,
+        "cv_auc_mean": 0.8431,
+        "cv_auc_std": 0.0154,
+        "folds": [
+          0.845,
+          0.8311,
+          0.8547,
+          0.8638,
+          0.8211
+        ]
+      },
+      {
+        "model": "SVM-rbf C=0.1 gamma=0.01",
+        "l1_C": 0.1,
+        "cv_auc_mean": 0.841,
+        "cv_auc_std": 0.0208,
+        "folds": [
+          0.8424,
+          0.8188,
+          0.852,
+          0.8732,
+          0.8185
+        ]
+      },
+      {
+        "model": "LR C=0.01",
+        "l1_C": 0.1,
+        "cv_auc_mean": 0.8385,
+        "cv_auc_std": 0.0159,
+        "folds": [
+          0.8337,
+          0.827,
+          0.8491,
+          0.8634,
+          0.8192
+        ]
+      },
+      {
+        "model": "SVM-rbf C=1.0 gamma=0.001",
+        "l1_C": 0.3,
+        "cv_auc_mean": 0.8385,
+        "cv_auc_std": 0.0248,
+        "folds": [
+          0.8506,
+          0.8234,
+          0.8619,
+          0.8595,
+          0.7971
+        ]
+      },
+      {
+        "model": "SVM-rbf C=0.1 gamma=scale",
+        "l1_C": 0.1,
+        "cv_auc_mean": 0.8383,
+        "cv_auc_std": 0.0216,
+        "folds": [
+          0.8388,
+          0.8144,
+          0.8463,
+          0.874,
+          0.8181
+        ]
+      },
+      {
+        "model": "SVM-rbf C=1.0 gamma=0.001",
+        "l1_C": 3.0,
+        "cv_auc_mean": 0.8376,
+        "cv_auc_std": 0.0287,
+        "folds": [
+          0.8422,
+          0.8212,
+          0.8514,
+          0.8793,
+          0.7939
+        ]
+      },
+      {
+        "model": "LR C=0.1",
+        "l1_C": 0.03,
+        "cv_auc_mean": 0.8366,
+        "cv_auc_std": 0.0233,
+        "folds": [
+          0.8234,
+          0.8145,
+          0.8472,
+          0.8776,
+          0.8202
+        ]
+      },
+      {
+        "model": "SVM-linear C=0.01",
+        "l1_C": 0.03,
+        "cv_auc_mean": 0.8364,
+        "cv_auc_std": 0.0249,
+        "folds": [
+          0.8219,
+          0.82,
+          0.846,
+          0.881,
+          0.8133
+        ]
+      },
+      {
+        "model": "SVM-rbf C=10.0 gamma=0.001",
+        "l1_C": 0.03,
+        "cv_auc_mean": 0.8364,
+        "cv_auc_std": 0.0242,
+        "folds": [
+          0.8255,
+          0.8181,
+          0.8436,
+          0.8803,
+          0.8143
+        ]
+      }
+    ],
+    "auc": {
+      "test": 0.8762,
+      "ext": 0.8915
+    },
+    "ci95": {
+      "test": [
+        0.8249331671272379,
+        0.9229781830865652
+      ],
+      "ext": [
+        0.8138000260261748,
+        0.955952380952381
+      ]
+    }
+  },
+  "auto": {
+    "source": "auto",
+    "l1_grid": [
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1.0,
+      3.0
+    ],
+    "n_l1_selected": 21,
+    "sel_cols": [
+      "original_shape_Sphericity",
+      "original_glszm_LargeAreaLowGrayLevelEmphasis",
+      "log-sigma-1-0-mm-3D_glszm_SizeZoneNonUniformity",
+      "log-sigma-1-0-mm-3D_gldm_LowGrayLevelEmphasis",
+      "log-sigma-2-0-mm-3D_firstorder_Energy",
+      "log-sigma-2-0-mm-3D_firstorder_TotalEnergy",
+      "log-sigma-2-0-mm-3D_glrlm_LongRunHighGrayLevelEmphasis",
+      "log-sigma-5-0-mm-3D_gldm_GrayLevelNonUniformity",
+      "wavelet-LLH_glszm_HighGrayLevelZoneEmphasis",
+      "wavelet-LLH_glszm_LowGrayLevelZoneEmphasis",
+      "wavelet-LHL_firstorder_Range",
+      "wavelet-LHH_glcm_ClusterTendency",
+      "wavelet-LHH_glcm_Correlation",
+      "wavelet-LHH_ngtdm_Complexity",
+      "wavelet-LHH_ngtdm_Contrast",
+      "wavelet-HLL_glcm_Autocorrelation",
+      "wavelet-HLH_firstorder_Minimum",
+      "wavelet-HHL_firstorder_Skewness",
+      "wavelet-HHH_firstorder_Maximum",
+      "wavelet-LLL_firstorder_Skewness",
+      "wavelet-LLL_glszm_SizeZoneNonUniformity"
+    ],
+    "n_selected_per_C_full_train": {
+      "0.01": 2,
+      "0.03": 21,
+      "0.1": 73,
+      "0.3": 191,
+      "1.0": 293,
+      "3.0": 377
+    },
+    "best": {
+      "model": "SVM-rbf C=10.0 gamma=0.001",
+      "l1_C": 0.03,
+      "cv_auc_mean": 0.7667,
+      "cv_auc_std": 0.041,
+      "folds": [
+        0.7137,
+        0.7662,
+        0.733,
+        0.8285,
+        0.7923
+      ]
+    },
+    "top_cv_rows": [
+      {
+        "model": "SVM-rbf C=10.0 gamma=0.001",
+        "l1_C": 0.03,
+        "cv_auc_mean": 0.7667,
+        "cv_auc_std": 0.041,
+        "folds": [
+          0.7137,
+          0.7662,
+          0.733,
+          0.8285,
+          0.7923
+        ]
+      },
+      {
+        "model": "SVM-rbf C=0.1 gamma=0.001",
+        "l1_C": 3.0,
+        "cv_auc_mean": 0.7663,
+        "cv_auc_std": 0.0461,
+        "folds": [
+          0.7051,
+          0.7627,
+          0.7309,
+          0.8338,
+          0.7991
+        ]
+      },
+      {
+        "model": "SVM-linear C=0.1",
+        "l1_C": 0.03,
+        "cv_auc_mean": 0.766,
+        "cv_auc_std": 0.0424,
+        "folds": [
+          0.7128,
+          0.7703,
+          0.7258,
+          0.8274,
+          0.7939
+        ]
+      },
+      {
+        "model": "SVM-linear C=0.01",
+        "l1_C": 0.03,
+        "cv_auc_mean": 0.7654,
+        "cv_auc_std": 0.0389,
+        "folds": [
+          0.7157,
+          0.7676,
+          0.7315,
+          0.8236,
+          0.7886
+        ]
+      },
+      {
+        "model": "SVM-linear C=1.0",
+        "l1_C": 0.03,
+        "cv_auc_mean": 0.765,
+        "cv_auc_std": 0.0433,
+        "folds": [
+          0.7089,
+          0.7702,
+          0.7253,
+          0.8258,
+          0.7951
+        ]
+      },
+      {
+        "model": "RF n=1000 depth=10",
+        "l1_C": 3.0,
+        "cv_auc_mean": 0.7645,
+        "cv_auc_std": 0.044,
+        "folds": [
+          0.7044,
+          0.7641,
+          0.7291,
+          0.8229,
+          0.8019
+        ]
+      },
+      {
+        "model": "SVM-rbf C=1.0 gamma=0.001",
+        "l1_C": 0.03,
+        "cv_auc_mean": 0.7643,
+        "cv_auc_std": 0.035,
+        "folds": [
+          0.7205,
+          0.7636,
+          0.7354,
+          0.8193,
+          0.7827
+        ]
+      },
+      {
+        "model": "SVM-linear C=10.0",
+        "l1_C": 0.03,
+        "cv_auc_mean": 0.764,
+        "cv_auc_std": 0.0437,
+        "folds": [
+          0.7062,
+          0.7679,
+          0.7256,
+          0.825,
+          0.7953
+        ]
+      },
+      {
+        "model": "RF n=1000 depth=None",
+        "l1_C": 3.0,
+        "cv_auc_mean": 0.7639,
+        "cv_auc_std": 0.0428,
+        "folds": [
+          0.7038,
+          0.771,
+          0.7285,
+          0.8217,
+          0.7942
+        ]
+      },
+      {
+        "model": "RF n=500 depth=None",
+        "l1_C": 3.0,
+        "cv_auc_mean": 0.7632,
+        "cv_auc_std": 0.0433,
+        "folds": [
+          0.7032,
+          0.771,
+          0.726,
+          0.8209,
+          0.7948
+        ]
+      }
+    ],
+    "auc": {
+      "test": 0.7477,
+      "ext": 0.7892
+    },
+    "ci95": {
+      "test": [
+        0.678488772202435,
+        0.8150909577314072
+      ],
+      "ext": [
+        0.6861739802510152,
+        0.8833333333333333
+      ]
+    }
+  },
+  "paired_tests": {
+    "rad_man_vs_rad_auto_test": {
+      "auc1": 0.8762,
+      "auc2": 0.7477,
+      "delta": 0.1285,
+      "p": 2.8e-05,
+      "ci90": [
+        0.078272676746514,
+        0.17955394543190306
+      ]
+    },
+    "rad_man_vs_rad_auto_ext": {
+      "auc1": 0.8915,
+      "auc2": 0.7892,
+      "delta": 0.1023,
+      "p": 0.03314,
+      "ci90": [
+        0.02391990557751418,
+        0.18468869906305768
+      ]
+    },
+    "rad_man_vs_dl_man_ext": {
+      "auc1": 0.8915,
+      "auc2": 0.8706,
+      "delta": 0.0209,
+      "p": 0.470552,
+      "ci95": [
+        -0.032796660703637515,
+        0.08214285714285707
+      ]
+    },
+    "rad_auto_vs_dl_auto_ext": {
+      "auc1": 0.7892,
+      "auc2": 0.8187,
+      "delta": -0.0295,
+      "p": 0.52769,
+      "ci95": [
+        -0.1220140413897413,
+        0.061887692577030806
+      ]
+    }
+  },
+  "fusion_equal_weight": {
+    "manual_ext": {
+      "auc": 0.8945,
+      "ci95": [
+        0.8207665598290599,
+        0.9534911389953378
+      ]
+    },
+    "auto_ext": {
+      "auc": 0.8175,
+      "ci95": [
+        0.7218065457399417,
+        0.9061057413933188
+      ]
+    }
+  }
+}

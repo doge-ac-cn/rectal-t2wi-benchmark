@@ -1,0 +1,24 @@
+{
+  "r50_25d_vs_d3inf": {
+    "n": 82,
+    "point_delta": 0.0695,
+    "se_boot": 0.0399,
+    "mdd80": 0.1119,
+    "power_at_delta0.05": 0.239,
+    "ci90_boot": [
+      0.0054,
+      0.1368
+    ]
+  },
+  "cnx_25d_vs_d3inf": {
+    "n": 82,
+    "point_delta": 0.0647,
+    "se_boot": 0.0401,
+    "mdd80": 0.1122,
+    "power_at_delta0.05": 0.238,
+    "ci90_boot": [
+      0.0019,
+      0.1311
+    ]
+  }
+}

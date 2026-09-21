@@ -1,0 +1,54 @@
+{
+  "rad_int": {
+    "n": 194,
+    "point_delta": 0.1227,
+    "se_boot": 0.0298,
+    "mdd80": 0.0834,
+    "power_at_delta0.05": 0.389,
+    "ci90_boot": [
+      0.074,
+      0.1716
+    ],
+    "equiv_0.05": false,
+    "equiv_0.10": false
+  },
+  "rad_ext": {
+    "n": 82,
+    "point_delta": 0.0751,
+    "se_boot": 0.0391,
+    "mdd80": 0.1096,
+    "power_at_delta0.05": 0.248,
+    "ci90_boot": [
+      0.0119,
+      0.141
+    ],
+    "equiv_0.05": false,
+    "equiv_0.10": false
+  },
+  "dl_int": {
+    "n": 193,
+    "point_delta": 0.0764,
+    "se_boot": 0.023,
+    "mdd80": 0.0644,
+    "power_at_delta0.05": 0.585,
+    "ci90_boot": [
+      0.0398,
+      0.1151
+    ],
+    "equiv_0.05": false,
+    "equiv_0.10": false
+  },
+  "dl_ext": {
+    "n": 82,
+    "point_delta": 0.0322,
+    "se_boot": 0.0274,
+    "mdd80": 0.0767,
+    "power_at_delta0.05": 0.447,
+    "ci90_boot": [
+      -0.0119,
+      0.0779
+    ],
+    "equiv_0.05": false,
+    "equiv_0.10": true
+  }
+}

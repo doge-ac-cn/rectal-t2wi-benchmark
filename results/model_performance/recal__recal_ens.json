@@ -1,0 +1,64 @@
+{
+  "radiomics_manual": {
+    "oof_auc": 0.828,
+    "test_before": {
+      "slope": 1.177,
+      "intercept": 0.038,
+      "ece": 0.0467,
+      "brier": 0.1464,
+      "auc": 0.864
+    },
+    "test_after": {
+      "slope": 1.339,
+      "intercept": 0.038,
+      "ece": 0.0701,
+      "brier": 0.1477,
+      "auc": 0.864
+    },
+    "ext_before": {
+      "slope": 1.292,
+      "intercept": -0.121,
+      "ece": 0.0832,
+      "brier": 0.1372,
+      "auc": 0.8861
+    },
+    "ext_after": {
+      "slope": 1.47,
+      "intercept": -0.121,
+      "ece": 0.1018,
+      "brier": 0.1392,
+      "auc": 0.8861
+    }
+  },
+  "radiomics_auto": {
+    "oof_auc": 0.761,
+    "test_before": {
+      "slope": 0.86,
+      "intercept": -0.162,
+      "ece": 0.0742,
+      "brier": 0.2005,
+      "auc": 0.7508
+    },
+    "test_after": {
+      "slope": 0.992,
+      "intercept": -0.183,
+      "ece": 0.0433,
+      "brier": 0.1998,
+      "auc": 0.7508
+    },
+    "ext_before": {
+      "slope": 1.11,
+      "intercept": 0.413,
+      "ece": 0.0818,
+      "brier": 0.1769,
+      "auc": 0.8205
+    },
+    "ext_after": {
+      "slope": 1.281,
+      "intercept": 0.385,
+      "ece": 0.1089,
+      "brier": 0.1768,
+      "auc": 0.8205
+    }
+  }
+}

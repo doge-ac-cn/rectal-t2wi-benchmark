@@ -1,0 +1,446 @@
+{
+  "rad_manual_test": {
+    "n": 194,
+    "brier": 0.1387,
+    "ece": 0.0637,
+    "slope": 1.1652,
+    "intercept": -0.0071,
+    "slope_CI": [
+      0.8896,
+      1.6295
+    ],
+    "intercept_CI": [
+      -0.3765,
+      0.3956
+    ],
+    "mean_p": 0.4245,
+    "prev": 0.4175,
+    "curve": [
+      {
+        "bin_center": 0.05,
+        "n": 32,
+        "mean_p": 0.0553,
+        "event_rate": 0.0312
+      },
+      {
+        "bin_center": 0.15,
+        "n": 33,
+        "mean_p": 0.1486,
+        "event_rate": 0.1818
+      },
+      {
+        "bin_center": 0.25,
+        "n": 21,
+        "mean_p": 0.2491,
+        "event_rate": 0.1429
+      },
+      {
+        "bin_center": 0.35,
+        "n": 13,
+        "mean_p": 0.3455,
+        "event_rate": 0.3077
+      },
+      {
+        "bin_center": 0.45,
+        "n": 18,
+        "mean_p": 0.4385,
+        "event_rate": 0.3333
+      },
+      {
+        "bin_center": 0.55,
+        "n": 18,
+        "mean_p": 0.5546,
+        "event_rate": 0.6667
+      },
+      {
+        "bin_center": 0.65,
+        "n": 12,
+        "mean_p": 0.6417,
+        "event_rate": 0.5833
+      },
+      {
+        "bin_center": 0.75,
+        "n": 13,
+        "mean_p": 0.741,
+        "event_rate": 0.6923
+      },
+      {
+        "bin_center": 0.85,
+        "n": 16,
+        "mean_p": 0.851,
+        "event_rate": 1.0
+      },
+      {
+        "bin_center": 0.95,
+        "n": 18,
+        "mean_p": 0.9522,
+        "event_rate": 0.9444
+      }
+    ]
+  },
+  "rad_manual_ext": {
+    "n": 82,
+    "brier": 0.1359,
+    "ece": 0.1578,
+    "slope": 1.3097,
+    "intercept": -0.1021,
+    "slope_CI": [
+      0.8986,
+      2.38
+    ],
+    "intercept_CI": [
+      -0.7803,
+      0.4764
+    ],
+    "mean_p": 0.5342,
+    "prev": 0.5244,
+    "curve": [
+      {
+        "bin_center": 0.05,
+        "n": 10,
+        "mean_p": 0.063,
+        "event_rate": 0.0
+      },
+      {
+        "bin_center": 0.15,
+        "n": 6,
+        "mean_p": 0.1545,
+        "event_rate": 0.3333
+      },
+      {
+        "bin_center": 0.25,
+        "n": 6,
+        "mean_p": 0.256,
+        "event_rate": 0.3333
+      },
+      {
+        "bin_center": 0.35,
+        "n": 6,
+        "mean_p": 0.344,
+        "event_rate": 0.0
+      },
+      {
+        "bin_center": 0.45,
+        "n": 10,
+        "mean_p": 0.4336,
+        "event_rate": 0.1
+      },
+      {
+        "bin_center": 0.55,
+        "n": 8,
+        "mean_p": 0.5516,
+        "event_rate": 0.75
+      },
+      {
+        "bin_center": 0.65,
+        "n": 4,
+        "mean_p": 0.6817,
+        "event_rate": 1.0
+      },
+      {
+        "bin_center": 0.75,
+        "n": 12,
+        "mean_p": 0.7445,
+        "event_rate": 0.8333
+      },
+      {
+        "bin_center": 0.85,
+        "n": 8,
+        "mean_p": 0.8552,
+        "event_rate": 0.75
+      },
+      {
+        "bin_center": 0.95,
+        "n": 12,
+        "mean_p": 0.9496,
+        "event_rate": 1.0
+      }
+    ]
+  },
+  "rad_auto_test": {
+    "n": 194,
+    "brier": 0.2011,
+    "ece": 0.0986,
+    "slope": 0.889,
+    "intercept": -0.1131,
+    "slope_CI": [
+      0.5993,
+      1.321
+    ],
+    "intercept_CI": [
+      -0.4443,
+      0.2458
+    ],
+    "mean_p": 0.4334,
+    "prev": 0.4175,
+    "curve": [
+      {
+        "bin_center": 0.15,
+        "n": 29,
+        "mean_p": 0.1602,
+        "event_rate": 0.1034
+      },
+      {
+        "bin_center": 0.25,
+        "n": 41,
+        "mean_p": 0.2536,
+        "event_rate": 0.1951
+      },
+      {
+        "bin_center": 0.35,
+        "n": 32,
+        "mean_p": 0.3456,
+        "event_rate": 0.5
+      },
+      {
+        "bin_center": 0.45,
+        "n": 24,
+        "mean_p": 0.4414,
+        "event_rate": 0.5417
+      },
+      {
+        "bin_center": 0.55,
+        "n": 20,
+        "mean_p": 0.5452,
+        "event_rate": 0.45
+      },
+      {
+        "bin_center": 0.65,
+        "n": 18,
+        "mean_p": 0.6361,
+        "event_rate": 0.3889
+      },
+      {
+        "bin_center": 0.75,
+        "n": 10,
+        "mean_p": 0.7457,
+        "event_rate": 0.8
+      },
+      {
+        "bin_center": 0.85,
+        "n": 13,
+        "mean_p": 0.8357,
+        "event_rate": 0.8462
+      },
+      {
+        "bin_center": 0.95,
+        "n": 7,
+        "mean_p": 0.9581,
+        "event_rate": 0.8571
+      }
+    ]
+  },
+  "rad_auto_ext": {
+    "n": 82,
+    "brier": 0.1931,
+    "ece": 0.1174,
+    "slope": 0.916,
+    "intercept": 0.3138,
+    "slope_CI": [
+      0.5837,
+      1.4824
+    ],
+    "intercept_CI": [
+      -0.2044,
+      0.9601
+    ],
+    "mean_p": 0.4639,
+    "prev": 0.5244,
+    "curve": [
+      {
+        "bin_center": 0.05,
+        "n": 4,
+        "mean_p": 0.0859,
+        "event_rate": 0.0
+      },
+      {
+        "bin_center": 0.15,
+        "n": 13,
+        "mean_p": 0.1476,
+        "event_rate": 0.1538
+      },
+      {
+        "bin_center": 0.25,
+        "n": 15,
+        "mean_p": 0.2392,
+        "event_rate": 0.3333
+      },
+      {
+        "bin_center": 0.35,
+        "n": 7,
+        "mean_p": 0.3546,
+        "event_rate": 0.7143
+      },
+      {
+        "bin_center": 0.45,
+        "n": 7,
+        "mean_p": 0.4679,
+        "event_rate": 0.8571
+      },
+      {
+        "bin_center": 0.55,
+        "n": 7,
+        "mean_p": 0.5529,
+        "event_rate": 0.4286
+      },
+      {
+        "bin_center": 0.65,
+        "n": 9,
+        "mean_p": 0.6533,
+        "event_rate": 0.5556
+      },
+      {
+        "bin_center": 0.75,
+        "n": 9,
+        "mean_p": 0.7434,
+        "event_rate": 0.7778
+      },
+      {
+        "bin_center": 0.85,
+        "n": 5,
+        "mean_p": 0.8482,
+        "event_rate": 0.8
+      },
+      {
+        "bin_center": 0.95,
+        "n": 6,
+        "mean_p": 0.9582,
+        "event_rate": 1.0
+      }
+    ]
+  },
+  "dl_manual_ext": {
+    "n": 82,
+    "brier": 0.1508,
+    "ece": 0.1029,
+    "slope": 1.0825,
+    "intercept": -0.2646,
+    "slope_CI": [
+      0.7536,
+      1.6683
+    ],
+    "intercept_CI": [
+      -1.0255,
+      0.3497
+    ],
+    "mean_p": 0.5592,
+    "prev": 0.5244,
+    "curve": [
+      {
+        "bin_center": 0.05,
+        "n": 9,
+        "mean_p": 0.0491,
+        "event_rate": 0.0
+      },
+      {
+        "bin_center": 0.15,
+        "n": 6,
+        "mean_p": 0.1391,
+        "event_rate": 0.1667
+      },
+      {
+        "bin_center": 0.25,
+        "n": 7,
+        "mean_p": 0.2326,
+        "event_rate": 0.1429
+      },
+      {
+        "bin_center": 0.35,
+        "n": 6,
+        "mean_p": 0.3664,
+        "event_rate": 0.6667
+      },
+      {
+        "bin_center": 0.45,
+        "n": 6,
+        "mean_p": 0.4421,
+        "event_rate": 0.3333
+      },
+      {
+        "bin_center": 0.55,
+        "n": 7,
+        "mean_p": 0.5364,
+        "event_rate": 0.2857
+      },
+      {
+        "bin_center": 0.65,
+        "n": 5,
+        "mean_p": 0.6409,
+        "event_rate": 0.6
+      },
+      {
+        "bin_center": 0.75,
+        "n": 9,
+        "mean_p": 0.7687,
+        "event_rate": 0.5556
+      },
+      {
+        "bin_center": 0.85,
+        "n": 14,
+        "mean_p": 0.8605,
+        "event_rate": 0.8571
+      },
+      {
+        "bin_center": 0.95,
+        "n": 13,
+        "mean_p": 0.9366,
+        "event_rate": 1.0
+      }
+    ]
+  },
+  "dl_auto_ext": {
+    "n": 82,
+    "brier": 0.1843,
+    "ece": 0.1497,
+    "slope": 2.0069,
+    "intercept": 0.3139,
+    "slope_CI": [
+      1.2617,
+      3.4322
+    ],
+    "intercept_CI": [
+      -0.1986,
+      0.9152
+    ],
+    "mean_p": 0.4852,
+    "prev": 0.5244,
+    "curve": [
+      {
+        "bin_center": 0.25,
+        "n": 12,
+        "mean_p": 0.2639,
+        "event_rate": 0.3333
+      },
+      {
+        "bin_center": 0.35,
+        "n": 19,
+        "mean_p": 0.3437,
+        "event_rate": 0.1053
+      },
+      {
+        "bin_center": 0.45,
+        "n": 16,
+        "mean_p": 0.4374,
+        "event_rate": 0.5
+      },
+      {
+        "bin_center": 0.55,
+        "n": 8,
+        "mean_p": 0.5447,
+        "event_rate": 0.625
+      },
+      {
+        "bin_center": 0.65,
+        "n": 14,
+        "mean_p": 0.6533,
+        "event_rate": 0.8571
+      },
+      {
+        "bin_center": 0.75,
+        "n": 13,
+        "mean_p": 0.7371,
+        "event_rate": 0.9231
+      }
+    ]
+  }
+}
